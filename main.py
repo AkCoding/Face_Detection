@@ -14,4 +14,6 @@ gray_image = cv2.cvtColor(color_image, cv2.COLOR_BGR2GRAY)
 #Syntax: Classifier.detectMultiScale(input image, Scale Factor , Min Neighbors)
 faces = face_cascade.detectMultiScale(gray_image, 1.1, 5)
 
-
+# Draw rectangle around the faces
+for (x, y, w, h) in faces:
+    cv2.rectangle(color_image, (x, y), (x + w, y + h), (0, 0, 255), 4)
