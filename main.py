@@ -5,6 +5,6 @@ import cv2
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 # Read image file
-color_image = cv2.imread('girl.png')
+color_image = cv2.imread('Mypic.jpg')
 
 
